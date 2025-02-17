@@ -2992,7 +2992,7 @@ input, select, textarea {
 				-webkit-transition: opacity 1s ease;
 				-ms-transition: opacity 1s ease;
 				transition: opacity 1s ease;
-				background: rgba(49, 36, 80, 0.9);
+				background: rgba(31, 65, 18, 0.6);
 				content: '';
 				display: block;
 				height: 100%;
@@ -3844,10 +3844,10 @@ input, select, textarea {
 
 	#intro {
 		background-attachment: fixed;
-		background-image: url("images/intro.svg");
+		background-image: url("../../images/cover.png");
 		background-position: top right;
 		background-repeat: no-repeat;
-		background-size: 100% 100%;
+		background-size: contain;
 	}
 
 		#intro p {
