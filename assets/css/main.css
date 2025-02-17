@@ -98,7 +98,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #312450;
+		background: #153422;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2525,7 +2525,7 @@ input, select, textarea {
 			display: block;
 			background: #ffffff;
 			border-radius: 100%;
-			color: #312450;
+			color: #1E3D2B;
 			text-align: center;
 			line-height: 2.5em;
 			margin: 0 0 1.3em 0;
@@ -2534,30 +2534,6 @@ input, select, textarea {
 			.icon.major:before {
 				font-size: 1.25em;
 			}
-
-				.wrapper.style1 .icon.major:before {
-					color: #5e42a6;
-				}
-
-				.wrapper.style1-alt .icon.major:before {
-					color: #493382;
-				}
-
-				.wrapper.style2 .icon.major:before {
-					color: #5052b5;
-				}
-
-				.wrapper.style2-alt .icon.major:before {
-					color: #3e4094;
-				}
-
-				.wrapper.style3 .icon.major:before {
-					color: #b74e91;
-				}
-
-				.wrapper.style3-alt .icon.major:before {
-					color: #953d75;
-				}
 
 /* Image */
 
@@ -3240,7 +3216,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #5e42a6;
+			background-color: #153422;
 		}
 
 		.wrapper.style1-alt {
@@ -3248,7 +3224,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #5052b5;
+			background-color: #EFBF04;
 		}
 
 		.wrapper.style2-alt {
@@ -3256,7 +3232,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #b74e91;
+			background-color: #252525;
 		}
 
 		.wrapper.style3-alt {
@@ -3524,7 +3500,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #312450;
+		background: #13271C;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3761,14 +3737,14 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:before {
-				background: #3c2c62;
+				background: #AC8E16;
 			}
 
 			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -moz-linear-gradient(to right, #153422, #EFBF04);
+				background-image: -webkit-linear-gradient(to right, #153422, #EFBF04);
+				background-image: -ms-linear-gradient(to right, #153422, #EFBF04);
+				background-image: linear-gradient(to right, #153422, #EFBF04);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -3857,7 +3833,7 @@ input, select, textarea {
 
 						#sidebar nav a:after {
 							background-image: none;
-							background-color: #b74e91;
+							background-color: #EFBF04;
 						}
 
 		}
@@ -3907,3 +3883,21 @@ input, select, textarea {
 			}
 
 		}
+
+#one h1, #one h2, #one h3, #one h4, #one h5, #one h6 {
+	color: #252525 !important;
+}
+
+#one p {
+	color: #252525 !important; 
+}
+
+#one .actions .button {
+	border-color: #252525 !important;
+	color: #252525 !important;
+}
+
+#one .actions .button:hover {
+	background-color: #1E3D2B !important;
+	color: #EFBF04 !important;
+}
