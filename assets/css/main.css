@@ -3899,3 +3899,13 @@ input, select, textarea {
 	background-color: #1E3D2B !important;
 	color: #EFBF04 !important;
 }
+
+.ohio-underground-logo {
+	max-width: 80%;
+}
+
+.sponsor-logo {
+	width: 400px;
+	padding: 10px;
+	
+}
