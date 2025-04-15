@@ -3833,11 +3833,13 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
-
-			#sidebar {
+			#sidebar nav ul li.hide-mobile {
 				display: none;
 			}
 
+			#sidebar nav ul li.mobile-first-child {
+				margin: 0;
+			}
 		}
 
 /* Intro */
@@ -3901,11 +3903,15 @@ input, select, textarea {
 }
 
 .ohio-underground-logo {
-	max-width: 80%;
+	max-width: 100%;
 }
 
 .sponsor-logo {
+	max-width: 100%;
 	width: 400px;
 	padding: 10px;
-	
+}
+
+.no-mb {
+	margin-bottom: 0;
 }
