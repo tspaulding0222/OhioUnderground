@@ -9,17 +9,29 @@
 	</head>
 	<body class="is-preload">
 
+		<!-- Mobile menu toggle -->
+		<button class="mobile-menu-toggle" id="mobileMenuToggle">
+			<div class="hamburger" id="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</button>
+
+		<!-- Mobile overlay -->
+		<div class="mobile-overlay" id="mobileOverlay"></div>
+
 		<!-- Sidebar -->
 			<section id="sidebar">
 				<div class="inner">
 					<nav>
 						<ul>
 							<li class="hide-mobile"><a href="#intro">Welcome</a></li>
-							<li class="hide-mobile"><a href="#one">League Info</a></li>
-							<li class="mobile-first-child" ><a href="#two">Locations</a></li>
-							<li class="hide-mobile"><a href="#three">Contact/Social Media</a></li>
+							<li class="mobile-first-child"><a href="faq.html">FAQ</a></li>
+							<li><a href="#two">Locations</a></li>
+							<li><a href="#three">Contact/Social Media</a></li>
 							<li><a href="events.html">Events</a></li>
-							<li><a href="sponsors.html">Sponsors</a></li>
+							<li class="hide-mobile"><a href="sponsors.html">Sponsors</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -47,7 +59,7 @@
 								<div class="inner">
 									<h2>General Information</h2>
 									<p>
-										The Underground Circuit is a Onewheel Racing Competition using GPS Mobile Phone tracking. “Circuits” are organized by the community and set across the United States. Each Circuit is made up of designated “Trails” that are raced for time during a three month season. Ohio Underground, established in 2023, is the official Underground Circuit for Ohio.
+										The Underground Circuit is a Onewheel Racing Competition using GPS Mobile Phone tracking. "Circuits" are organized by the community and set across the United States. Each Circuit is made up of designated "Trails" that are raced for time during a three month season. Ohio Underground, established in 2023, is the official Underground Circuit for Ohio.
 									</p>	
 									<ul class="actions">
 										<li><a href="faq.html" class="button">FAQ</a></li>
@@ -190,6 +202,44 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<!-- Mobile menu script -->
+			<script>
+				document.addEventListener('DOMContentLoaded', function() {
+					const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+					const hamburger = document.getElementById('hamburger');
+					const sidebar = document.getElementById('sidebar');
+					const mobileOverlay = document.getElementById('mobileOverlay');
+					const navLinks = sidebar.querySelectorAll('nav ul li a');
+
+					function toggleMobileMenu() {
+						sidebar.classList.toggle('mobile-nav-open');
+						hamburger.classList.toggle('active');
+						mobileOverlay.classList.toggle('active');
+					}
+
+					function closeMobileMenu() {
+						sidebar.classList.remove('mobile-nav-open');
+						hamburger.classList.remove('active');
+						mobileOverlay.classList.remove('active');
+					}
+
+					mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+					mobileOverlay.addEventListener('click', closeMobileMenu);
+
+					// Close menu when clicking on nav links
+					navLinks.forEach(link => {
+						link.addEventListener('click', closeMobileMenu);
+					});
+
+					// Close menu on escape key
+					document.addEventListener('keydown', function(e) {
+						if (e.key === 'Escape') {
+							closeMobileMenu();
+						}
+					});
+				});
+			</script>
 
 	</body>
 </html>
