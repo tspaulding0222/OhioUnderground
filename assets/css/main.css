@@ -3550,12 +3550,32 @@ input, select, textarea {
 
 	@media screen and (max-width: 736px) {
 		#topnav .nav-container {
-			height: 60px;
+			height: 70px;
 			padding: 0 1em;
 		}
 
 		#wrapper {
-			padding-top: 60px;
+			padding-top: 70px;
+		}
+
+		#topnav .nav-links {
+			gap: 1.5em;
+		}
+
+		#topnav .nav-links a {
+			font-size: 0.75em;
+			letter-spacing: 0.1em;
+			padding: 0.75em 0.5em;
+		}
+	}
+
+	@media screen and (max-width: 480px) {
+		#topnav .nav-container {
+			height: 65px;
+		}
+
+		#wrapper {
+			padding-top: 65px;
 		}
 
 		#topnav .nav-links {
@@ -3563,27 +3583,8 @@ input, select, textarea {
 		}
 
 		#topnav .nav-links a {
-			font-size: 0.6em;
-			letter-spacing: 0.1em;
-		}
-	}
-
-	@media screen and (max-width: 480px) {
-		#topnav .nav-container {
-			height: 55px;
-		}
-
-		#wrapper {
-			padding-top: 55px;
-		}
-
-		#topnav .nav-links {
-			gap: 0.6em;
-		}
-
-		#topnav .nav-links a {
-			font-size: 0.55em;
-			padding: 0.3em 0;
+			font-size: 0.7em;
+			padding: 0.75em 0.5em;
 		}
 	}
 
